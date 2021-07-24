@@ -8,27 +8,27 @@ namespace DAY_19_UserRegistration
         {
             Console.WriteLine("Welcome to User Registration ");
 
-            //string FirstName;
-            //Console.Write("Enter First Name : ");
-            //FirstName = Console.ReadLine();
-            //UserRegistration.CheckFirstName(FirstName);
+            string FirstName;
+            Console.Write("Enter First Name : ");
+            FirstName = Console.ReadLine();
+            UserRegistration.CheckFirstName(FirstName);
 
 
-            //string LastName;
-            //Console.Write("Enter Last Name : ");
-            //LastName = Console.ReadLine();
-            //UserRegistration.CheckLastName(LastName);
+            string LastName;
+            Console.Write("Enter Last Name : ");
+            LastName = Console.ReadLine();
+            UserRegistration.CheckLastName(LastName);
 
 
-            //string EmailId;
-            //Console.Write("Enter  Email Id  :");
-            //EmailId = Console.ReadLine();
-            //UserRegistration.CheckEmail(EmailId);
+            string EmailId;
+            Console.Write("Enter  Email Id  :");
+            EmailId = Console.ReadLine();
+            UserRegistration.CheckEmail(EmailId);
 
-            //string PhoneNumber;
-            //Console.Write("Enter Phone Number : ");
-            //PhoneNumber = Console.ReadLine();
-            //UserRegistration.CheckNumber(PhoneNumber);
+            string PhoneNumber;
+            Console.Write("Enter Phone Number : ");
+            PhoneNumber = Console.ReadLine();
+            UserRegistration.CheckNumber(PhoneNumber);
 
             string Password;
             Console.Write("Enter Password : ");
