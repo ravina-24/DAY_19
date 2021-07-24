@@ -9,6 +9,9 @@ namespace DAY_19_UserRegistration
     {
         public static string Regex_FirstName = "^[A-Z][a-z]{2,}$";
         public static string Regex_LastName = "^[A-Z][a-z]{2,}$";
+        public static string Regex_EmailId= "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
+      
+
         public static bool ValidateFirstName(string FirstName)
         {
 
@@ -46,6 +49,26 @@ namespace DAY_19_UserRegistration
 
         }
 
+        public static bool ValidateEmail(string Emailid)
+        {
+
+
+            return Regex.IsMatch(Emailid, Regex_EmailId);
+
+        }
+        public static void CheckEmail(string EmailId)
+        {
+            if (Regex.IsMatch(EmailId, Regex_EmailId) == false)
+            {
+                Console.WriteLine("Enter valid Email in proper format ");
+
+            }
+
+
+        }
+
+
+        
 
     }
 }
