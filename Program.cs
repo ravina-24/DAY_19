@@ -35,7 +35,7 @@ namespace DAY_19_UserRegistration
             Password = Console.ReadLine();
             UserRegistration.CheckPassword(Password);
 
-
+            Console.WriteLine(CheckEmailSamples.ValidateEmail("abc+100@gmail.com.com"));
             Console.ReadKey();
 
         }
