@@ -12,7 +12,7 @@ namespace DAY_19_UserRegistration
         public static string Regex_EmailId= "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
         public static string Regex_PhoneNumber = "^[0-9]{2}[ ][6-9][0-9]{9}$";
 
-        public static string Regex_Password = "^[A-Za-z]{8,}$";
+        public static string Regex_Password = "^((?=.*[A-Z])(?=.{8,}))";
 
 
         public static bool ValidateFirstName(string FirstName)
@@ -27,8 +27,8 @@ namespace DAY_19_UserRegistration
         {
             if (Regex.IsMatch(FirstName, Regex_FirstName) == false)
             {
-                Console.WriteLine("Enter valid Name in proper format ");
-                
+                Console.WriteLine("Entered First Name is invalid ");
+                CheckFirstName(FirstName);
             }
             
 
@@ -45,7 +45,7 @@ namespace DAY_19_UserRegistration
         {
             if (Regex.IsMatch(LastName, Regex_LastName) == false)
             {
-                Console.WriteLine("Enter valid LastName in proper format ");
+                Console.WriteLine("Entered  LastName is invalid");
 
             }
            
@@ -63,7 +63,7 @@ namespace DAY_19_UserRegistration
         {
             if (Regex.IsMatch(EmailId, Regex_EmailId) == false)
             {
-                Console.WriteLine("Enter valid Email in proper format ");
+                Console.WriteLine("Entered EmailId is invalid  ");
 
             }
 
@@ -80,7 +80,7 @@ namespace DAY_19_UserRegistration
         {
             if (Regex.IsMatch(PhoneNumber, Regex_PhoneNumber) == false)
             {
-                Console.WriteLine("Enter valid phone Number in proper format ");
+                Console.WriteLine("Entered Phone number is invalid");
 
             }
 
@@ -97,7 +97,7 @@ namespace DAY_19_UserRegistration
         {
             if (Regex.IsMatch(Password, Regex_Password) == false)
             {
-                Console.WriteLine(" password is invalid  enter minimum 8 characters including letters and numbers ");
+                Console.WriteLine(" password is invalid  enter minimum 8 characters and one Upper case  ");
 
             }
 
