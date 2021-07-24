@@ -25,8 +25,10 @@ namespace DAY_19_UserRegistration
             EmailId = Console.ReadLine();
             UserRegistration.CheckEmail(EmailId);
 
-           
-
+            string PhoneNumber;
+            Console.Write("Enter Phone Number : ");
+            PhoneNumber = Console.ReadLine();
+            UserRegistration.CheckNumber(PhoneNumber);
 
             Console.ReadKey();
 
